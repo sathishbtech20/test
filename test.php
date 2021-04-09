@@ -1,5 +1,11 @@
 <?php
-class Test{
+
+interface TestIn {
+	public function testme();
+}
+
+class Test implements TestIn {
+	
 	public function testme() {
 		echo 'Hi this is test';
 	}
