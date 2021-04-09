@@ -1,8 +1,7 @@
 <?php
+require 'App\Interfaces\TestIn.php';
 
-interface TestIn {
-	public function testme();
-}
+use App\Interfaces\TestIn as TestIn;
 
 class Test implements TestIn {
 	
