@@ -5,14 +5,8 @@ use App\Interfaces\TestIn as TestIn;
 
 class Test implements TestIn {
 	
-	public function testme() {
+	public function testmethod() {
 		echo 'Hi this is test';
-	}
-
-	public function onemore() {
-		echo 'Next trial';
-	}
-	public function foo() {
 	}
 }
 
@@ -24,10 +18,9 @@ class Second
 		$this->test = $test;
 	}
 	public function checking() {		
-		$this->test->testme();
-		$this->test->onemore();
+		$this->test->testmethod();
 	}
 }
-$test = new test;
+$test = new Test;
 $second = new Second($test);
 $second->checking();
