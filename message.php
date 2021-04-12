@@ -1,9 +1,9 @@
 <?php
-require 'App\Interfaces\Message.php';
+require 'app\interfaces\MessageInterface.php';
 
-use App\Interfaces\Message as Message;
+use App\Interfaces\MessageInterface as MessageInterface;
 
-class Message implements Message {
+class Message implements MessageInterface {
 
 	protected $message;
 
